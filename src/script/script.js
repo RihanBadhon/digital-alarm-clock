@@ -56,14 +56,18 @@ function setAlarm() {
  function setAlarm() {
   const regExp = /^([01]\d|2[0-3]):([0-5]\d)$/;   
 
-  if (!regExp.test(alarmTimeInput.value)) {
-    alarmStatus.innerText = 'Invalid Input, Enter The Time in HH:MM Format.';
-    return false; 
-  }
+  function setAlarm() {
+  const regExp = /^([01]\d|2[0-3]):([0-5]\d)$/;   
+  // this function above validate or check 
+  // if the time input in the HH:MM
+  // fformat or not
 
-  alarmTime = alarmTimeInput.value;           
-  startAlarm();
-  return true; 
+  if (regExp.test(alarmTimeInput.value)) {      
+    alarmTime = alarmTimeInput.value;           
+    startAlarm();
+    } else {
+    alarmStatus.innerText = 'Invalid Input, Enter The Time in HH:MM Format.';
+    }
 
 }
 
