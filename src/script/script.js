@@ -61,7 +61,6 @@ function setAlarm() {
   // this function above validate or check 
   // if the time input in the HH:MM
   // fformat or not
-
   if (regExp.test(alarmTimeInput.value)) {      
     alarmTime = alarmTimeInput.value;           
     startAlarm();
