@@ -1,0 +1,83 @@
+@charset "utf-8";
+ 
+html {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #161515;
+    align-items: center;
+    color: white;
+}
+
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.clock {
+	font-size: 100px;
+	font-weight: 200;
+	color: #fff;
+	padding: 30px 50px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.alarm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+}
+input, button {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+input {
+	width: 80px;
+	padding: 5px;
+    text-align: center;
+	border-radius: 18px;
+    background-color: #242121;
+    color: #fff;
+    	
+}
+
+button {
+	padding: 5px 10px;
+	border-radius: 18px;
+	border: none;
+	background-color: #32bb9d;
+	color: #f3eaea;
+    transition: 0.75%;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #74d383;
+}
