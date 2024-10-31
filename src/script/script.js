@@ -53,12 +53,18 @@ function setAlarm() {
   // if the time input in the HH:MM
   // fformat or not
 
-  if (regExp.test(alarmTimeInput.value)) {      
-    alarmTime = alarmTimeInput.value;           
-    startAlarm();
-    } else {
+ function setAlarm() {
+  const regExp = /^([01]\d|2[0-3]):([0-5]\d)$/;   
+
+  if (!regExp.test(alarmTimeInput.value)) {
     alarmStatus.innerText = 'Invalid Input, Enter The Time in HH:MM Format.';
-    }
+    return false; 
+  }
+
+  alarmTime = alarmTimeInput.value;           
+  startAlarm();
+  return true; 
+
 }
 
 setInterval(updateClock, 1000);
