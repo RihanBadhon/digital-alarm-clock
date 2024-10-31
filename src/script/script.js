@@ -52,15 +52,6 @@ function setAlarm() {
   // this function above validate or check 
   // if the time input in the HH:MM
   // fformat or not
-
- function setAlarm() {
-  const regExp = /^([01]\d|2[0-3]):([0-5]\d)$/;   
-
-  function setAlarm() {
-  const regExp = /^([01]\d|2[0-3]):([0-5]\d)$/;   
-  // this function above validate or check 
-  // if the time input in the HH:MM
-  // fformat or not
   if (regExp.test(alarmTimeInput.value)) {      
     alarmTime = alarmTimeInput.value;           
     startAlarm();
